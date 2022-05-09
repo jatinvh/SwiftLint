@@ -19,6 +19,10 @@
   [#3668](https://github.com/realm/SwiftLint/issues/3668)
   [#2728](https://github.com/realm/SwiftLint/issues/2728)
 
+* Add back `void_function_in_ternary` opt-in rule to warn against using
+  a ternary operator to call `Void` functions.  
+  [Marcelo Fabri](https://github.com/marcelofabri)
+
 #### Bug Fixes
 
 * Ignore array types in `syntactic_sugar` rule if their associated `Index` is
@@ -53,10 +57,6 @@
   x86 & arm64 macOS.  
   [Juozas Valancius](https://github.com/juozasvalancius)
   [#3840](https://github.com/realm/SwiftLint/issues/3840)
-
-* Add back `void_function_in_ternary` opt-in rule to warn against using
-  a ternary operator to call `Void` functions.  
-  [Marcelo Fabri](https://github.com/marcelofabri)
 
 * Add back `return_value_from_void_function` opt-in rule to warn against using
   `return <expression>` in a function that returns `Void`.  
