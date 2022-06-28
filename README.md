@@ -21,9 +21,53 @@ unacceptable behavior to [info@realm.io](mailto:info@realm.io).
 ## Installation
 
 ### Using [Homebrew](http://brew.sh/):
+Step First : install your mac
+```
+install Homebrew  
 
 ```
+Step Second : install your mac
+```
 brew install swiftlint
+```
+Step Third : used treminal command in your project
+```
+cd /Users/admin/Desktop/jj/UsertestLint/UsertestLint.xcodeproj
+
+```
+Step Four : Add file .yml file command 
+
+```
+touch .swiftlint.yml      
+ 
+ ```
+Step Five : how to find .yml file in project?
+```
+"command + shift + ." press in .yml show your project
+
+```
+Step Six : RunScript add 
+```
+export PATH="$PATH:/opt/homebrew/bin"
+if which swiftlint > /dev/null; then
+  swiftlint
+else
+  echo "warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint"
+fi
+
+```
+Step Seven : .yml Add to project
+
+```
+ .yml file is add in your project.
+ 
+ - .yml is used in rules add.
+    example :- spaceing , varible name max and min define 
+    
+    identifier_name:
+    min_length: # only min_length
+    error: 4 # only error
+ 
 ```
 
 ### Using [CocoaPods](https://cocoapods.org):
